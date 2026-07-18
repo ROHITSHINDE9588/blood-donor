@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60 * 24
     password_reset_expire_minutes: int = 30
     email_verification_expire_minutes: int = 60 * 24
-    frontend_url: AnyHttpUrl | str = "http://localhost:5173"
-    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    frontend_url: AnyHttpUrl | str ="https://blood-donor-three.vercel.app"
+    cors_origins: list[str] = ["https://blood-donor-three.vercel.app"]
     auto_create_tables: bool = True
     upload_dir: Path = Path("backend/app/uploads")
     yolo_model_path: str = "yolov8n.pt"

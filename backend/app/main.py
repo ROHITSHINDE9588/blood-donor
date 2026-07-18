@@ -36,7 +36,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.add_middleware(InMemoryRateLimitMiddleware, max_requests=180, window_seconds=60)
+# app.add_middleware(InMemoryRateLimitMiddleware, max_requests=180, window_seconds=60)
 
 app.include_router(auth.router, prefix=settings.api_prefix)
 app.include_router(users.router, prefix=settings.api_prefix)
