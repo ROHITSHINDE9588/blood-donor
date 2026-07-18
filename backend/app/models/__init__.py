@@ -1,0 +1,16 @@
+from app.models.entities import (  # noqa: F401
+    AIRanking,
+    BloodGroup,
+    BloodRequest,
+    DonationHistory,
+    Donor,
+    Feedback,
+    Hospital,
+    Location,
+    Notification,
+    Recipient,
+    RequestStatus,
+    User,
+    UserRole,
+    VerificationStatus,
+)
